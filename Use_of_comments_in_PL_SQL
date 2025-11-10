@@ -1,0 +1,21 @@
+#Commenting in PL/SQL
+Note : Single line comments are -- , multi line comments are used as  per the below code.
+
+
+DECLARE
+
+    MESSAGE VARCHAR2(200) := 'Commenting the multiple lines in PL/SQL !';
+
+BEGIN
+
+/*
+    
+    *this data has been commented.
+    
+*/
+
+    DBMS_OUTPUT.PUT_LINE(MESSAGE);
+    
+END;
+
+/
