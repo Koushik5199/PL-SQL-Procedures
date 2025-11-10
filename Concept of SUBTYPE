@@ -1,0 +1,21 @@
+#Understanding the concept of SUBTYPE in PL/SQL
+-- SUBTYPE IN PL/SQL MEANS A USER DEFINED NAME GIVEN TO AN EXIXSTING VALID PL/SQL DATA TYPE. IT DOES NOT CREATE A NEW DATA TYPE.
+
+
+DECLARE
+    
+    SUBTYPE  name IS char(20); 
+    SUBTYPE  message IS varchar2(100);
+    salutation name;
+    greetings message;
+    
+BEGIN
+    
+    salutation := 'Reader';
+    greetings  := 'Welcome to the World of PL/SQL';
+    
+    dbms_output.put_line('Hello' || salutation || greetings);
+    
+END;
+
+/
