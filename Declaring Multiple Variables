@@ -1,0 +1,15 @@
+# Declaring Multiple Variables in PL/SQL
+
+DECLARE
+
+    num1 INTEGER;
+    num2 REAL;
+    num3 DOUBLE PRECISION;
+
+BEGIN
+
+    NULL;
+    
+END;
+
+/
