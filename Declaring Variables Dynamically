@@ -1,0 +1,23 @@
+# Declaring Variables Dynamically
+
+
+
+SET SERVEROUTPUT ON;
+
+DECLARE
+    Name VARCHAR2(100);
+    Age  INTEGER;
+    Statement VARCHAR2(100);
+BEGIN
+    
+    Name := '&Enter_the_name';
+    Age  := &Enter_the_age;
+    
+    statement := 'My name is ' || Name ||' and my age is ' || Age;
+
+    DBMS_OUTPUT.PUT_LINE(statement);
+    
+     
+END;
+/
+
